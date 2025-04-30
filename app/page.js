@@ -1,9 +1,12 @@
-import Image from "next/image";
+import SendTrasactions from "@/components/SendTrasactions";
+import Show from "@/components/Show";
+import { SendTransactionError } from "@solana/web3.js";
 
 export default function Home() {
   return (
-    <div className="underline text-3xl">
-      hello sir
+    <div >
+      <Show />
+      <SendTrasactions />
     </div>
   );
 }
